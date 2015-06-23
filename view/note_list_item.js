@@ -1,7 +1,7 @@
 'use strict';
 
 var Backbone = require('backbone');
-var template = require("./noteListItemView-template.hbs");
+var template = require("../template/note_list_item.hbs");
 
 module.exports.NoteListItemView = Backbone.View.extend({
     tagName: 'tr',
@@ -15,7 +15,7 @@ module.exports.NoteListItemView = Backbone.View.extend({
     },
 
     render: function () {
-        var html = template(this.model.toJSON());
+        var html = template(this.model.attributes);
         this.$el.html(html);
         return this;
     },

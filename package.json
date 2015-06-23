@@ -1,7 +1,7 @@
 {
   "name": "k-takam",
   "version": "0.0.1",
-  "description": "backbone.js tutorial",
+  "description": "Learn and Understand Backbone.",
   "main": "index.html",
   "author": "",
   "license": "ISC",
@@ -10,7 +10,7 @@
     "url": ""
   },
   "scripts": {
-    "start": "watchify js/main.js -o js/app.js --debug true --transform hbsfy",
+    "start": "watchify index/main.js -o ./app.js --debug true --transform hbsfy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {

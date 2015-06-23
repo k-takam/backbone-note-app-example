@@ -2,9 +2,9 @@
 
 var Backbone = require('backbone');
 Backbone.LocalStorage = require('backbone.localstorage');
-var Note = require('./note').Note;
+var Note = require('../model/note').Note;
 
 module.exports.NoteCollection = Backbone.Collection.extend({
-    localStrage: new Backbone.LocalStorage('Notes'),
+    localStorage: new Backbone.LocalStorage('Notes'),
     model: Note
 });
